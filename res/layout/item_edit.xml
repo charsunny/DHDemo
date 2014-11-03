@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="8dip"
+	android:layout_marginRight="8dip"
+	android:orientation="horizontal">
+	
+<!--
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1">
+		<TextView
+			android:text="TextView"
+			android:id="@+id/artistTextEdit"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="24dip" />
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:text="TextView"
+				android:id="@+id/titleTextEdit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<TextView
+				android:text="TextView"
+				android:id="@+id/durationTextEdit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+	</LinearLayout>
+-->
+	<LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+        	android:id="@+id/linearLayout_site"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="2dp"
+        	android:background="#eeeeee"
+        	android:orientation="horizontal" >
+
+        	<TextView
+            	android:id="@+id/textView_siteIdKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/title_item_margin_left"
+            	android:text="@string/site_name"
+            	android:textSize="18sp" />
+        	<TextView
+            	android:id="@+id/textView_siteIdValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/text_distance"
+            	android:text="@string/default_value"
+            	android:textSize="18sp" />
+
+    	</LinearLayout>
+
+        <LinearLayout
+        	android:id="@+id/linearLayout_time"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="2dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_detectionTimeKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/content_item_margin_left"
+            	android:text="@string/detection_time"
+            	android:textSize="14sp" />
+        	<TextView
+            	android:id="@+id/textView_detectionTimeValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/text_distance"
+            	android:text="@string/default_value"
+            	android:textSize="14sp" />
+		</LinearLayout>
+		
+        <LinearLayout
+            android:id="@+id/linearLayout_volumetric"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="2dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_valumetricKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/content_item_margin_left"
+            	android:text="@string/volumetric_water_content"
+            	android:textSize="14sp" />
+        	<TextView
+            	android:id="@+id/textView_valumetricValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/text_distance"
+            	android:text="@string/default_value"
+            	android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_weight"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="2dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_weightwaterKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/content_item_margin_left"
+            	android:text="@string/weight_water_content"
+            	android:textSize="14sp" />
+        	<TextView
+            	android:id="@+id/textView_weightwaterValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/text_distance"
+            	android:text="@string/default_value"
+            	android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_lonlat"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="2dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_lonlatKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/content_item_margin_left"
+            	android:text="@string/lon_lat"
+            	android:textSize="14sp" />
+        	<TextView
+            	android:id="@+id/textView_lonlatValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/text_distance"
+            	android:text="@string/default_value"
+            	android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_soilstype"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="2dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_soilTypeKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/content_item_margin_left"
+            	android:text="@string/soils_type"
+            	android:textSize="14sp" />
+        	<TextView
+            	android:id="@+id/textView_soilTypeValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/text_distance"
+            	android:text="@string/default_value"
+            	android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_measuredepth"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="2dp"
+        	android:layout_marginBottom="2dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_measureDepthKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/content_item_margin_left"
+            	android:text="@string/measure_depth"
+            	android:textSize="14sp" />
+        	<TextView
+            	android:id="@+id/textView_measureDepthValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="@dimen/text_distance"
+            	android:text="@string/default_value"
+            	android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+    
+	<CheckBox
+		android:id="@+id/checkBoxEdit"
+		android:focusable="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone">
+	</CheckBox>
+
+</LinearLayout>

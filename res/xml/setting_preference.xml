@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <PreferenceCategory android:title="系统参数">
+        <EditTextPreference android:summary="008" android:title="设备编号" android:key="@string/device_id_key"/>
+        <CheckBoxPreference android:disableDependentsState="false" android:key="@string/enable_password_key" android:summaryOn="密码保护已开启，点击关闭" android:summaryOff="密码未开启，点击开启密码保护" android:title="@string/enable_password" android:defaultValue="true"/>
+        <PreferenceScreen android:title="修改密码" android:summary="" android:dependency="@string/enable_password_key">
+            <intent android:targetPackage="com.example.dhdemo" android:targetClass="com.example.dhdemo.CenterSiteActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="通讯参数">
+        <PreferenceScreen android:title="蓝牙通讯" android:summary="设置蓝牙通讯参数">
+            <intent android:targetPackage="com.example.dhdemo" android:targetClass="com.example.dhdemo.BluetoothActivity" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="移动通讯" android:summary="设置GPRS/GSM网络通讯参数">
+            <intent android:targetPackage="com.example.dhdemo" android:targetClass="com.example.dhdemo.CenterSiteActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="监测点参数">         
+        <PreferenceScreen android:title="站点参数" android:summary="设置站点名称，地址">
+            <intent android:targetPackage="com.example.dhdemo" android:targetClass="com.example.dhdemo.BluetoothActivity" />
+        </PreferenceScreen>       
+<!--       
+        <EditTextPreference android:summary="80" android:title="传感器测深（CM）" android:key="@string/sensor_depth_key"/>
+--> 
+        <EditTextPreference android:summary="1.50" android:title="土壤容重比" android:key="@string/soils_bulk_key"/>
+        <EditTextPreference android:summary="39" android:title="田间持水量（%）" android:key="@string/field_water_key"/>
+<!--
+        <ListPreference android:negativeButtonText="取消" android:dialogTitle="土壤类型" android:entryValues="@array/soil_type_value" android:entries="@array/soil_type" android:title="土壤类型" android:summary="粘土" android:key="@string/soil_type_key" android:defaultValue="@string/soil_type_default_value"/>
+-->        
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="GPS模式">
+        <CheckBoxPreference android:disableDependentsState="true" android:key="@string/switch_gps_mode" android:summaryOn="GPS为自动获取模式，点击可开启手动设置" android:summaryOff="GPS为手动获取模式，点击可开启自动获取" android:title="@string/switch_gps_mode"/>
+        <EditTextPreference android:dependency="@string/switch_gps_mode" android:summary="116.205" android:title="经度" android:key="@string/lon_key"/>
+        <EditTextPreference android:dependency="@string/switch_gps_mode" android:summary="40.401" android:title="纬度" android:key="@string/lat_key"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="传感器方程式：Y=AX³+BX²+CX+D">
+        <EditTextPreference android:summary="0.0337" android:title="三次项系数（A）" android:key="@string/A_key"/>
+        <EditTextPreference android:summary="-0.0337" android:title="二次项系数（B）" android:key="@string/B_key"/>
+        <EditTextPreference android:summary="0.0337" android:title="一次项系数（C）" android:key="@string/C_key"/>
+        <EditTextPreference android:summary="0.0337" android:title="常数项（D）" android:key="@string/D_key"/>
+    </PreferenceCategory>
+</PreferenceScreen>

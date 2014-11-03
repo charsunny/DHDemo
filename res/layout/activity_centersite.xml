@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8d6f6"
+    android:orientation="vertical"
+    tools:context=".CenterSiteActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#c8d6f6"
+	    android:orientation="vertical">
+	    
+	    <RelativeLayout
+	        android:id="@+id/relativeLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="35dp"
+	        android:background="#c8d600"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:id="@+id/center_site"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical = "true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10sp"
+	            android:text="@string/center_site"
+	            android:textSize="20sp" />
+	
+	        <Button
+	            android:id="@+id/Button_edit"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical = "true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:layout_marginRight="5sp"
+	            android:text="@string/modify"
+	            android:textSize="14sp" />
+	        
+	        	<CheckBox
+	        	    android:id="@+id/checkBoxEdit"
+	        	    android:layout_width="wrap_content"
+	        	    android:layout_height="wrap_content"
+	        	    android:layout_alignParentRight="true"
+	            	android:layout_centerVertical = "true"
+	            	android:layout_marginRight="5sp"
+	        	    android:focusable="false"
+	        	    android:visibility="gone" >
+
+				</CheckBox>
+	
+	    </RelativeLayout>
+
+        <LinearLayout
+        	android:id="@+id/linearLayout_site"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:orientation="horizontal" >
+
+        	<TextView
+            	android:id="@+id/textView_ip"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="15sp"
+            	android:text="@string/ip"
+            	android:textSize="18sp" />
+        	<TextView
+            	android:id="@+id/textView_ipValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="255.255.255.255"
+            	android:textSize="18sp" />
+        	
+        	<TextView
+            	android:id="@+id/textView_port"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5sp"
+            	android:text="@string/port"
+            	android:textSize="18sp" />
+        	<TextView
+            	android:id="@+id/textView_portValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="6000"
+            	android:textSize="18sp" />
+
+    	</LinearLayout>
+
+        <LinearLayout
+        	android:id="@+id/linearLayout_time"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_sms"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="15sp"
+            	android:text="@string/sms"
+            	android:textSize="18sp" />
+        	<TextView
+            	android:id="@+id/textView_smsValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="18911108888"
+            	android:textSize="18sp" />
+		</LinearLayout>
+		
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/Button_add"
+        android:text="@string/add_center_site"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/abc_search_dropdown_dark" />
+
+</LinearLayout>

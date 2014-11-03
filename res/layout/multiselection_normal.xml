@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+    	
+    	<Spinner android:id="@+id/siteSpinner"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+            android:layout_centerVertical = "true"
+            android:layout_marginLeft="5sp">
+    	</Spinner>
+    	
+    	<Button
+			android:text="编  辑"
+			android:id="@+id/editButton"
+			android:layout_alignParentRight="true"
+            android:layout_centerVertical = "true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp">
+    	</Button>
+    </RelativeLayout>
+    
+	<ListView
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_weight="1"
+		android:cacheColorHint="#00000000"
+		android:id="@+id/normalModeList">
+	    
+	</ListView>
+	
+</LinearLayout>

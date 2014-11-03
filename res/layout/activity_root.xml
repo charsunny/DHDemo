@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8d6f6"
+    android:orientation="vertical"
+    tools:context=".RootActivity" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#c8d600"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical = "true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:text="@string/realtime_data"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical = "true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5sp"
+            android:text="@string/default_time"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#c80000"
+        android:orientation="vertical" >
+
+        <LinearLayout
+        	android:id="@+id/linearLayout_site"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:orientation="horizontal" >
+
+        	<TextView
+            	android:id="@+id/textView_siteIdKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5sp"
+            	android:text="@string/site_id"
+            	android:textSize="20sp" />
+        	<TextView
+            	android:id="@+id/textView_siteIdValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="@string/default_value"
+            	android:textSize="20sp" />
+
+    	</LinearLayout>
+
+        <LinearLayout
+        	android:id="@+id/linearLayout_time"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_detectionTimeKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5sp"
+            	android:text="@string/detection_time"
+            	android:textSize="20sp" />
+        	<TextView
+            	android:id="@+id/textView_detectionTimeValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="@string/default_value"
+            	android:textSize="20sp" />
+		</LinearLayout>
+		
+        <LinearLayout
+            android:id="@+id/linearLayout_volumetric"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_valumetricKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5sp"
+            	android:text="@string/volumetric_water_content"
+            	android:textSize="20sp" />
+        	<TextView
+            	android:id="@+id/textView_valumetricValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="@string/default_value"
+            	android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_weight"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_weightwaterKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5sp"
+            	android:text="@string/weight_water_content"
+            	android:textSize="20sp" />
+        	<TextView
+            	android:id="@+id/textView_weightwaterValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="@string/default_value"
+            	android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_lonlat"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_lonlatKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5sp"
+            	android:text="@string/lon_lat"
+            	android:textSize="20sp" />
+        	<TextView
+            	android:id="@+id/textView_lonlatValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="@string/default_value"
+            	android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_soilstype"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_soilTypeKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5sp"
+            	android:text="@string/soils_type"
+            	android:textSize="20sp" />
+        	<TextView
+            	android:id="@+id/textView_soilTypeValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="@string/default_value"
+            	android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_measuredepth"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dp"
+        	android:layout_marginBottom="5dp"
+        	android:orientation="horizontal" >
+        	<TextView
+            	android:id="@+id/textView_measureDepthKey"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5sp"
+            	android:text="@string/measure_depth"
+            	android:textSize="20sp" />
+        	<TextView
+            	android:id="@+id/textView_measureDepthValue"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:text="@string/default_value"
+            	android:textSize="20sp" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Button_data_detection_query"
+        android:text="@string/data_detection_query"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/data_detection_query"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/abc_search_dropdown_dark" />
+
+    <Button
+        android:id="@+id/Button_paraments_setting"
+        android:text="@string/paraments_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/paraments_setting"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/abc_search_dropdown_dark" />
+
+    <Button
+        android:id="@+id/Button_phone_book"
+        android:text="@string/phone_book"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/phone_book"
+        android:visibility="gone"
+        android:drawableLeft="@drawable/abc_search_dropdown_dark" />
+    
+        <RelativeLayout
+        android:id="@+id/linearLayout_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+    	<Button
+        	android:id="@+id/Button_modify"
+        	android:text="@string/modify"
+        	android:layout_width="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginLeft="50dp"
+        	android:layout_height="60dp" />
+
+    	<Button
+        	android:id="@+id/Button_save"
+        	android:text="@string/save"
+        	android:layout_width="wrap_content"
+        	android:layout_centerHorizontal = "true"
+        	android:layout_height="60dp" />
+
+    	<Button
+        	android:id="@+id/Button_send"
+        	android:text="@string/send"
+        	android:layout_width="wrap_content"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="50dp"
+        	android:layout_height="60dp" />
+    	
+    </RelativeLayout>
+
+</LinearLayout>

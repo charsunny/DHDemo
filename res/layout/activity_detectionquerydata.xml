@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c8d6f6"
+    android:orientation="vertical"
+    tools:context=".DetectionQueryDataActivity" >
+
+    <Button
+        android:id="@+id/Button_real_data"
+        android:text="@string/detection_send_real_data"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/abc_search_dropdown_dark" />
+
+    <Button
+        android:id="@+id/Button_history_data"
+        android:text="@string/detection_send_history_data"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/abc_search_dropdown_dark" />
+
+    <Button
+        android:id="@+id/Button_site_image"
+        android:text="@string/detection_send_site_image"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/abc_search_dropdown_dark" />
+
+</LinearLayout>
